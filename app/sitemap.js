@@ -1,0 +1,1 @@
+export default function sitemap(){const origin=process.env.SITE_URL||'https://soynet.io';if(process.env.SITE_INDEXABLE!=='true')return [];return ['/','/solutions/cloud','/solutions/hybrid','/solutions/onpremise','/solutions/broadcast','/pricing','/resources'].map(path=>({url:origin+path,changeFrequency:'monthly',priority:path==='/'?1:.8}))}

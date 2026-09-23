@@ -1,0 +1,1 @@
+export default function robots(){return {rules:{userAgent:'*',...(process.env.SITE_INDEXABLE==='true'?{allow:'/',disallow:['/api/','/checkout','/contact']}:{disallow:'/'})},...(process.env.SITE_INDEXABLE==='true'?{sitemap:(process.env.SITE_URL||'https://soynet.io')+'/sitemap.xml'}:{})}}

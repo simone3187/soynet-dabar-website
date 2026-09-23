@@ -1,0 +1,2 @@
+.mobile-nav-payment{display:none}
+@media(max-width:680px){.mobile-nav-payment{display:block}}
