@@ -1,5 +1,13 @@
 # 개발 인수인계
 
+## 2026-11-25 제품 및 상담 개편
+- `lib/catalog.mjs`에서 8개 제품 메뉴, 상담 선택값, 운영자 지원 방식과 두 수신자를 관리합니다.
+- 기존 cloud/hybrid/onpremise 주소는 유지하고 제품 표시명만 변경했습니다. 추가 제품은 동일한 상세 경로 체계를 사용합니다.
+- 상담의 `supportMode`는 onsite/remote/self 중 하나가 필수입니다. 메일 초안과 선택적 webhook 데이터 모두 지원 방식과 두 수신자 정보를 포함합니다.
+- 기본 수신자는 jungpark@soynet.io, simone3187@soynet.io입니다. 기본 모드에서는 고객이 메일 앱에서 실제 전송해야 합니다. 자동 발송 시스템은 별도 연결이 필요합니다.
+- `components/Portfolio.js`는 제공된 포트폴리오와 YouTube 2개 링크를 표시합니다.
+- 행사 통역 브로셔는 새 hybrid.pdf를 사용합니다. 나머지 자료는 기존 원본을 유지하며, 관련 종합 브로셔를 공유하는 제품에는 안내 문구를 표시합니다.
+
 현재 서비스: https://soynet-dabar-mvp.vercel.app
 
 ## 구성
